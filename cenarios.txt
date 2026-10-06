@@ -1,0 +1,23 @@
+
+CENÁRIOS - MedAgenda - Marcar consulta
+
+Registar:     
+    Cenário 1 - Consulta aceite:
+        Dado que o médico está disponível e a hora está dentro do seu horário de expediente,
+        quando o recepcionista marca a consulta,
+        então a consulta é registada com sucesso.
+ 
+    Cenário 2 - Consulta rejeitada por conflito de horário:
+        Dado que o médico já possui outra consulta no mesmo horário,
+        quando o recepcionista tenta marcar a consulta,
+        então a consulta é rejeitada e o sistema apresenta uma mensagem de erro.
+    
+    Cenário 3 - Consulta rejeitada por estar fora do horário de expediente:
+        Dado que a hora pretendida está fora do horário de expediente do médico,
+        quando o recepcionista tenta marcar a consulta,
+        então a consulta é rejeitada e o sistema indica o motivo.
+    
+    Cenário 4 - Remarcação por ausência do médico:
+        Dado que existe uma consulta agendada e o médico não pode comparecer,
+        quando a secretária cancela e remarca a consulta,
+        então o paciente é informado e a nova consulta é registada, se for válida.
