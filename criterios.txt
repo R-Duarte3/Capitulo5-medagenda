@@ -8,3 +8,4 @@ Registar:
     4. A consulta só é registada depois de todas as validações serem concluídas com sucesso;
     5. O recepcionista tem de selecionar um paciente e um médico antes de indicar a data, a hora e a duração;
     6. Quando o agendamento não é válido, o sistema apresenta uma mensagem a explicar o motivo.
+    7. Remover esta linha
